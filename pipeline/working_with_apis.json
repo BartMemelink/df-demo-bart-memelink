@@ -18,12 +18,45 @@
 					"url": "https://www.rijksmuseum.nl/api/nl/collection?key=6epvixwD&involvedMaker=Rembrandt+van+Rijn",
 					"method": "GET"
 				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "rijksData",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('rijksData').output.artObjects",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Append variable1",
+							"type": "AppendVariable",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "images",
+								"value": {
+									"value": "@json(concat('{\"id\":\"',item().id, '\",', '\"url\":\"', item().webImage.url, '\"}'))",
+									"type": "Expression"
+								}
+							}
+						}
+					]
+				}
 			}
 		],
 		"variables": {
-			"api-key": {
-				"type": "String",
-				"defaultValue": "6epvixwD"
+			"images": {
+				"type": "Array"
 			}
 		},
 		"annotations": []
