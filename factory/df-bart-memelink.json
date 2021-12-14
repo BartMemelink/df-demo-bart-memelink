@@ -1,0 +1,9 @@
+{
+	"name": "df-bart-memelink",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c79419fc-7ac5-4ebd-b250-98bb60dd4706",
+		"tenantId": "3d4d17ea-1ae4-4705-947e-51369c5a5f79"
+	}
+}
