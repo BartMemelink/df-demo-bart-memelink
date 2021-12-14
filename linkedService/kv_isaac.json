@@ -1,0 +1,10 @@
+{
+	"name": "kv_isaac",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kv-isaac.vault.azure.net/"
+		}
+	}
+}
