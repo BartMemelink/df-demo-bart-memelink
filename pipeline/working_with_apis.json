@@ -15,10 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": {
-						"value": "@concat('https://www.rijksmuseum.nl/api/nl/collection?key=', variables('api-key'))",
-						"type": "Expression"
-					},
+					"url": "https://www.rijksmuseum.nl/api/nl/collection?key=6epvixwD&involvedMaker=Rembrandt+van+Rijn",
 					"method": "GET"
 				}
 			}
