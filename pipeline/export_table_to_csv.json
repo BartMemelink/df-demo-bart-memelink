@@ -42,9 +42,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "ProductID",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 1
+									"physicalType": "String"
 								}
 							},
 							{
@@ -54,9 +54,9 @@
 									"physicalType": "nvarchar"
 								},
 								"sink": {
+									"name": "Name",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 2
+									"physicalType": "String"
 								}
 							},
 							{
@@ -66,9 +66,9 @@
 									"physicalType": "nvarchar"
 								},
 								"sink": {
+									"name": "ProductNumber",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 3
+									"physicalType": "String"
 								}
 							},
 							{
@@ -78,9 +78,9 @@
 									"physicalType": "nvarchar"
 								},
 								"sink": {
+									"name": "Color",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 4
+									"physicalType": "String"
 								}
 							},
 							{
@@ -92,9 +92,9 @@
 									"precision": 19
 								},
 								"sink": {
+									"name": "StandardCost",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 5
+									"physicalType": "String"
 								}
 							},
 							{
@@ -106,9 +106,9 @@
 									"precision": 19
 								},
 								"sink": {
+									"name": "ListPrice",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 6
+									"physicalType": "String"
 								}
 							},
 							{
@@ -118,9 +118,9 @@
 									"physicalType": "nvarchar"
 								},
 								"sink": {
+									"name": "Size",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 7
+									"physicalType": "String"
 								}
 							},
 							{
@@ -132,9 +132,9 @@
 									"precision": 8
 								},
 								"sink": {
+									"name": "Weight",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 8
+									"physicalType": "String"
 								}
 							},
 							{
@@ -144,9 +144,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "ProductCategoryID",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 9
+									"physicalType": "String"
 								}
 							},
 							{
@@ -156,9 +156,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "ProductModelID",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 10
+									"physicalType": "String"
 								}
 							},
 							{
@@ -168,9 +168,9 @@
 									"physicalType": "datetime"
 								},
 								"sink": {
+									"name": "SellStartDate",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 11
+									"physicalType": "String"
 								}
 							},
 							{
@@ -180,9 +180,9 @@
 									"physicalType": "datetime"
 								},
 								"sink": {
+									"name": "SellEndDate",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 12
+									"physicalType": "String"
 								}
 							},
 							{
@@ -192,9 +192,9 @@
 									"physicalType": "datetime"
 								},
 								"sink": {
+									"name": "DiscontinuedDate",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 13
+									"physicalType": "String"
 								}
 							},
 							{
@@ -204,9 +204,9 @@
 									"physicalType": "varbinary"
 								},
 								"sink": {
+									"name": "ThumbNailPhoto",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 14
+									"physicalType": "String"
 								}
 							},
 							{
@@ -216,9 +216,9 @@
 									"physicalType": "nvarchar"
 								},
 								"sink": {
+									"name": "ThumbnailPhotoFileName",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 15
+									"physicalType": "String"
 								}
 							},
 							{
@@ -228,9 +228,9 @@
 									"physicalType": "uniqueidentifier"
 								},
 								"sink": {
+									"name": "rowguid",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 16
+									"physicalType": "String"
 								}
 							},
 							{
@@ -240,9 +240,9 @@
 									"physicalType": "datetime"
 								},
 								"sink": {
+									"name": "ModifiedDate",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 17
+									"physicalType": "String"
 								}
 							}
 						],
@@ -261,7 +261,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "products_csv",
+						"referenceName": "products_small_csv",
 						"type": "DatasetReference"
 					}
 				]
