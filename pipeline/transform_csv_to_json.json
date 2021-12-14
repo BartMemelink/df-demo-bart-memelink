@@ -40,13 +40,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "product_csv",
+						"referenceName": "products_csv",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Json",
+						"referenceName": "products_json",
 						"type": "DatasetReference"
 					}
 				]
