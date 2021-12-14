@@ -10,7 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "products.json",
+				"fileName": {
+					"value": "@concat(pipeline().runId, '.json')",
+					"type": "Expression"
+				},
 				"folderPath": "bartmemelink",
 				"fileSystem": "demo"
 			}

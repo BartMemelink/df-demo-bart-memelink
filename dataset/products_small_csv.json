@@ -10,7 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "products_small.csv",
+				"fileName": {
+					"value": "@concat(pipeline().runId, '-small.csv')",
+					"type": "Expression"
+				},
 				"folderPath": "bartmemelink",
 				"fileSystem": "demo"
 			},
