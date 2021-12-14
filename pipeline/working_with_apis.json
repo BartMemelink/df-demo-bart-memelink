@@ -20,7 +20,7 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "step2",
 				"type": "ForEach",
 				"dependsOn": [
 					{
@@ -45,12 +45,31 @@
 							"typeProperties": {
 								"variableName": "images",
 								"value": {
-									"value": "@json(concat('{\"id\":\"',item().id, '\",', '\"url\":\"', item().webImage.url, '\"}'))",
+									"value": "@json(concat('{\"id\":\"',item().id,'\",', '\"url\":\"',item().webImage.url,'\"}'))",
 									"type": "Expression"
 								}
 							}
 						}
 					]
+				}
+			},
+			{
+				"name": "step3",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "step2",
+						"dependencyConditions": [
+							"Skipped"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('images')",
+						"type": "Expression"
+					}
 				}
 			}
 		],
